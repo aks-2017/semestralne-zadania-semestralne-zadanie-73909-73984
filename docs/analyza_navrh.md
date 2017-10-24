@@ -105,6 +105,7 @@ Obrázok 4 Návrh topológie [6]
 ## 2.2.	Technológie
 
 Porovnanie použitých technológií v èlánku a návrhu našich technológií:
+
 |Použítá technológia v èlánku|Naša navrhnutá technológia|
 |-------------|:-------------:|
 |Server Apache HTTP| Server Nginx |
