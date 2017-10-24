@@ -112,11 +112,11 @@ Porovnanie pouitıch technológií v èlánku a návrhu našich technológií:
 |Klientskı PC (Win 8, I7, 8GB RAM)|Klientskı PC (Win 10, I5, 8GB RAM)|
 |Prehrávaè - Bitmovin|Prehrávaè – VLC|	
 
-Rozhodli sme sa od èlánku odlíši inou vo¾bou HTTP servera, prehrávaèa a klientského PC. V prípade zistenia nekompatibility skúsime poui inı kompatibilnı server alebo prehrávaè. Tım by sme chceli dokáza univerzálnos prostredia Mininet.
+Rozhodli sme sa od èlánku odlíši inou vo¾bou HTTP servera, prehrávaèa a klientského PC. V prípade zistenia vzájomnej nekompatibility alebo nekompatibility s technikou MPEG-DASH skúsime poui inı kompatibilnı server alebo prehrávaè. Tım by sme chceli dokáza univerzálnos prostredia Mininet.
 
 ## 2.3.	Princíp testovania
 
-Testova budeme podobnım princípom, ako je pouitı v èlánku. Video v codecu H.264 bude streamované pomocou VLC media player. Bandwidth bude menenı cez framework Mininetu minievents, ktorı umoòuje meni bandwidth a iné vlastnosti dynamicky. Kadı test bude trva 120 sekúnd a kadıch 30 sekúnd budeme na linke Link1 meni bandwidth napríklad na hodnoty 1024 kb/s, 2048 kb/s a 3072 kb/s.
+Testova budeme podobnım princípom, ako je pouitı v èlánku. Video v codecu H.264 bude streamované pomocou VLC media player s vyuítím techniky MPEG-DASH. Bandwidth bude menenı cez framework Mininetu minievents, ktorı umoòuje meni bandwidth a iné vlastnosti dynamicky. Kadı test bude trva 120 sekúnd a kadıch 30 sekúnd budeme na linke Link1 meni bandwidth napríklad na hodnoty 1024 kb/s, 2048 kb/s a 3072 kb/s. Budeme sledova zmeny hodnoty bitratu v plynocom èase.
 
 Bude vykonanıch aspoò 10 testov, ktoré budú následne vyhodnotené a porovnané s vısledkami z èlánku. Prípadné zhody alebo rozdiely budú zdokumentované.
 
