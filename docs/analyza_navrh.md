@@ -110,22 +110,43 @@ Porovnanie pouitıch technológií v èlánku a návrhu našich technológií:
 |-------------|:-------------:|
 |Server Apache HTTP| Server Nginx |
 |Klientskı PC (Win 8, I7, 8GB RAM)|Klientskı PC (Win 10, I5, 8GB RAM)|
-|Prehrávaè - Bitmovin|Prehrávaè – VLC|	
+|Prehrávaè - Bitmovin|Prehrávaè – VLC|
+|Kontrélér - nespomenutı|Kontrolér - Ryu|
+|Codec - nespomenutı|Codec - H.264|
+|Virtuálny switch - OpenVSwitch|Virtuálny switch - OpenVSwitch|
+|Mininet verzie 2.2.1|Mininet verzie 2.2.2|
+|Databáza - MySQL|Databáza - PostgreSQL|	
 
-Rozhodli sme sa od èlánku odlíši inou vo¾bou HTTP servera, prehrávaèa a klientského PC. V prípade zistenia vzájomnej nekompatibility alebo nekompatibility s technikou MPEG-DASH skúsime poui inı kompatibilnı server alebo prehrávaè. Tım by sme chceli dokáza univerzálnos prostredia Mininet.
+Rozhodli sme sa od èlánku odlíši inou vo¾bou HTTP servera, prehrávaèa, klientského PC, vo¾bou vlastného kontroléra, codecom, verziou Mininetu a inou databázou. V prípade zistenia vzájomnej nekompatibility alebo nekompatibility s technikou MPEG-DASH skúsime poui inı kompatibilné zariadenia alebo technológie. Tım by sme chceli dokáza univerzálnos prostredia Mininet aj v novšej verzií s pouitím inıch technológií.
 
 ## 2.3.	Princíp testovania
 
-Testova budeme podobnım princípom, ako je pouitı v èlánku. Video v codecu H.264 bude streamované pomocou VLC media player s vyuítím techniky MPEG-DASH. Bandwidth bude menenı cez framework Mininetu minievents, ktorı umoòuje meni bandwidth a iné vlastnosti dynamicky. Kadı test bude trva 120 sekúnd a kadıch 30 sekúnd budeme na linke Link1 meni bandwidth napríklad na hodnoty 1024 kb/s, 2048 kb/s a 3072 kb/s. Budeme sledova zmeny hodnoty bitratu v plynocom èase.
+Testova budeme podobnım princípom, ako je pouitı v èlánku. Video v codecu H.264 bude streamované pomocou VLC media player s vyuítím techniky MPEG-DASH. Bandwidth bude menenı cez framework Mininetu minievents, ktorı umoòuje meni bandwidth a iné vlastnosti dynamicky. 
 
-Bude vykonanıch aspoò 10 testov, ktoré budú následne vyhodnotené a porovnané s vısledkami z èlánku. Prípadné zhody alebo rozdiely budú zdokumentované.
+Na nasledujúcom obrázku môme vidie ukáku JSONu, ktorı bude meni bandwidth na linke medzi rozhraním root-eth0 a virtuálnym switchom (Link1).
+
+![alt text](https://github.com/aks-2017/semestralne-zadania-semestralne-zadanie-73909-73984/blob/master/docs/obr5.png)
+
+Kadı test bude trva 120 sekúnd a kadıch 30 sekúnd budeme na linke Link1 meni bandwidth napríklad na hodnoty 1024 kb/s, 2048 kb/s a 3072 kb/s, pod¾a nasledujúceho grafu. 
+
+![alt text](https://github.com/aks-2017/semestralne-zadania-semestralne-zadanie-73909-73984/blob/master/docs/obr6.png)
+
+Budeme sledova zmeny hodnoty bitratu v plynúcom èase.
+
+Bude vykonanıch aspoò 10 testov s nasledujúcimi parametrami:
+* dåka testu - 120 sekúnd
+* zmena bandwidthu - kadıch 30 sekúnd
+* hodnoty bandwidthu - 1024 kb/s, 2048 kb/s, 3072 kb/s, 1024 kb/s
+* video s codecom H.264 
+
+Všetky testy budú následne vyhodnotené a porovnané s vısledkami z èlánku. Prípadné zhody alebo rozdiely budú zdokumentované.
 
 # 3.	Literatúra
 [1] Mininet Overview, 2017, http://mininet.org/overview/
 
 [2] Software-Defined Networks and OpenFlow - The Internet Protocol Journal, Volume 16, No. 1, 2013, https://www.cisco.com/c/en/us/about/press/internet-protocol-journal/back-issues/table-contents-59/161-sdn.html
 
-[3]	 Mendoca M., Astuto B., Obraczka K., Turletti T.: Survey of Software-Defined Networking: Past, Present, and Future of Programmable Networks,2013
+[3] Mendoca M., Astuto B., Obraczka K., Turletti T.: Survey of Software-Defined Networking: Past, Present, and Future of Programmable Networks,2013
 
 [4] Kei Ohamura, 2013, NTT, https://osrg.github.io/ryu/slides/LinuxConJapan2013.pdf
 
