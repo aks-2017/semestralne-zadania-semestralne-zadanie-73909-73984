@@ -127,9 +127,13 @@ Na nasledujúcom obrázku môme vidie ukáku JSONu, ktorı bude meni bandwidth na
 
 ![alt text](https://github.com/aks-2017/semestralne-zadania-semestralne-zadanie-73909-73984/blob/master/docs/obr5.png)
 
+Obrázok 5 Ukáka JSONu [6]
+
 Kadı test bude trva 120 sekúnd a kadıch 30 sekúnd budeme na linke Link1 meni bandwidth napríklad na hodnoty 1024 kb/s, 2048 kb/s a 3072 kb/s, pod¾a nasledujúceho grafu. 
 
 ![alt text](https://github.com/aks-2017/semestralne-zadania-semestralne-zadanie-73909-73984/blob/master/docs/obr6.png)
+
+Obrázok 6 Graf zmeny bandwidthu v èase [6]
 
 Budeme sledova zmeny hodnoty bitratu v plynúcom èase.
 
