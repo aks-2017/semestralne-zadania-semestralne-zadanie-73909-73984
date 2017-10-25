@@ -6,7 +6,7 @@ Inicializova, kontrolova, meni a manaova správanie siete dynamicky cez rozh
 Obrázok 1 Tradièná sie(v¾avo) a SDN(vpravo) [6]
 
 Tradièné hardvérové siete nezodpovedajú neustále sa meniacim potrebám v oblasti vıpoètovej techniky a úloiska v prostrediach dátovıch centier a poskytovate¾ov sluieb. SDN (Software-Defined Networking) poskytuje lepšie monosti v takıch situáciách, kde mnohé vlastnosti vyadujú flexibilnejší a dynamickejší prístup. Vlastnosti SDN sú [10]:
-* Priamo programovate¾né – sieová kontrola je priamo programovate¾ná pretoe je oddelená od smerovacích funkcií
+* Priamo programovate¾ná – sieová kontrola je priamo programovate¾ná pretoe je oddelená od smerovacích funkcií
 * Agilná – oddelenie kontroly od smerovania umoòuje administrátorom dynamicky prispôsobova sieovú premávku aby spåòala meniace sa potreby
 * Centrálne manaovate¾ná – sieová inteligencia je centralizovaná v SDN kontroléroch, ktoré udrujú celkovı poh¾ad na sie. 
 * Programovate¾ná – umoòuje rıchlo meni konfiguráciu, manaova, zabezpeèi alebo optimalizova sie rıchlo cez automatické SDN programy, ktoré si môu ¾udia písa sami, pretoe nie sú proprietárne
@@ -63,7 +63,7 @@ Obrázok 2 Openflow prepínaè [2]
 Obrázok popisuje priblinú komunikáciu v rámci OpenFlow protokolu [2]: 
 * SDN kontrolér komunikuje s prepínaèmi, ktoré sú kompatibilné s OpenFlow, pomocou OpenFlow protokolu beiaceho cez SSL (Secure Sockets Layer)
 * kadı prepínaè sa pripojí k zariadeniam cie¾ového pouívate¾a, ktoré sú zdrojmi a cie¾mi paketovıch tokov
-* kadı prepínaè má nieko¾ko tabuliek (spomenutıch vyššie), implementovanıch hardvérom alebo firmvérom, ktoré sa pouívajú na riadenie toku cez prepínaèe
+* kadı prepínaè má nieko¾ko tabuliek, implementovanıch hardvérom alebo firmvérom, ktoré sa pouívajú na riadenie toku cez prepínaèe
 
 ## 1.4.	Prepínaè
 
