@@ -3,6 +3,7 @@
 sudo apt-get install build-essential libpcre3 libpcre3-dev libssl-dev
 
 sudo wget http://nginx.org/download/nginx-1.12.0.tar.gz
+
 sudo tar xzf nginx-1.12.0.tar.gz
 cd nginx-1.12.0
 
