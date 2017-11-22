@@ -16,34 +16,34 @@ sudo gedit /usr/local/nginx/conf/nginx.conf
 ---
 worker_processes 1;
 events {
-&nbsp;worker_connections 1024;
+  worker_connections 1024;
 }
 rtmp {
-&nbsp;server {
-&nbsp;&nbsp;listen 1935;
-&nbsp;&nbsp;chunk_size 4000;
-&nbsp;&nbsp;application dash {
-&nbsp;&nbsp;&nbsp;live on;
-&nbsp;&nbsp;&nbsp;dash on;
+  server {
+    listen 1935;
+    chunk_size 4000;
+    application dash {
+        live on;
+        dash on;
      # nastav priecinok dash_path
-&nbsp;&nbsp;&nbsp;dash_path /home/matus/test/dash;
-&nbsp;&nbsp}
-&nbsp;}
+        dash_path /home/matus/test/dash;
+    }
+  }
 }
 http {
-&nbsp;server {
-&nbsp;&nbsp;listen 8080;
-&nbsp;&nbsp;types {
-&nbsp;&nbsp;&nbsp;application/dash+xml mpd;
-&nbsp;&nbsp;&nbsp;application/vnd.apple.mpegurl m3u8;
-&nbsp;&nbsp;&nbsp;video/mp2t ts;
-&nbsp;&nbsp;}
-&nbsp;&nbsp;location /dash {
-    # nastav root priecinok
-&nbsp;&nbsp;&nbsp;root /home/matus/test;
-&nbsp;&nbsp;&nbsp;add_header Cache-Control no-cache;
-&nbsp;&nbsp;}
-&nbsp;}
+  server {
+    listen 8080;
+    types {
+      application/dash+xml mpd;
+      application/vnd.apple.mpegurl m3u8;
+      video/mp2t ts;
+    }
+    location /dash {
+      # nastav root priecinok
+      root /home/matus/test;
+      add_header Cache-Control no-cache;
+    }
+  }
 }
 ---
 ### 3. Spusti server
