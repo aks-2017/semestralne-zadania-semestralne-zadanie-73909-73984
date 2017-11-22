@@ -49,7 +49,8 @@ http {
       add_header Cache-Control no-cache;
     }
   }
-}```
+}
+```
 
 ---
 ### 3. Spusti server
