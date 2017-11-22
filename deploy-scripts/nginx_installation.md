@@ -5,16 +5,20 @@ sudo apt-get install build-essential libpcre3 libpcre3-dev libssl-dev
 sudo wget http://nginx.org/download/nginx-1.12.0.tar.gz
 
 sudo tar xzf nginx-1.12.0.tar.gz
+
 cd nginx-1.12.0
 
 sudo ./configure --with-http_ssl_module --add-module=../nginx-rtmp-module
+
 sudo make
+
 sudo make install
 
 ### 2. Upravo konfiguračný súbor nginx
 sudo gedit /usr/local/nginx/conf/nginx.conf
 
 ---
+
 worker_processes 1;
 events {
   worker_connections 1024;
@@ -46,6 +50,7 @@ http {
     }
   }
 }
+
 ---
 ### 3. Spusti server
   sudo /usr/local/nginx/sbin/nginx
