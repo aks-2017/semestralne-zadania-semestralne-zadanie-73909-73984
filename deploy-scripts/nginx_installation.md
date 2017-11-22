@@ -19,7 +19,7 @@ sudo gedit /usr/local/nginx/conf/nginx.conf
 
 ---
 
-worker_processes 1;
+```worker_processes 1;
 events {
   worker_connections 1024;
 }
@@ -49,7 +49,7 @@ http {
       add_header Cache-Control no-cache;
     }
   }
-}
+}```
 
 ---
 ### 3. Spusti server
