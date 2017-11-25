@@ -1,1 +1,0 @@
-Tu sa nachadzaju skripty, ktore spustame v mininete.

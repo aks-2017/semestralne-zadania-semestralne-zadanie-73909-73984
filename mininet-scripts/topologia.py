@@ -6,26 +6,23 @@ from mininet.cli import CLI
 from mininet.link import Intf
 from mininet.log import setLogLevel, info
 
+#sudo -E python topologia.py
+#sudo ryu-manager simple_switch.py
+
 def myNetwork():
 
-	net = Mininet(topo=None, build=False)
+	net = Mininet(topo=None, build=True)
 
 	info('*** controller\n')
 	net.addController(name='c0', controller=RemoteController)
 
 	info('*** switch\n')
 	s1 = net.addSwitch('s1')
-	Intf('eth1', node=s1)
-
-	info('*** host\n')
-	h1 = net.addHost('h1', ip = '0.0.0.0')
-
-	info('*** link\n')
-	net.addLink(h1, s1)
+	Intf('eth0', node=s1)
+	Intf('eth2', node=s1)
 
 	info('*** starting')
 	net.start()
-	#s1.cmdPrint('dhclient '+s1.defaultIntf().name)
 	CLI(net)
 	net.stop()
 
