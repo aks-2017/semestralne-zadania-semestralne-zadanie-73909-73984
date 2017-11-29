@@ -14,7 +14,7 @@ sudo make
 
 sudo make install
 
-### 2. Upravo konfiguračný súbor nginx
+### 2. Uprav konfiguračný súbor nginx
 sudo gedit /usr/local/nginx/conf/nginx.conf
 
 ---

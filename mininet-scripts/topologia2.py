@@ -2,11 +2,7 @@
 
 import time
 import json
-import argparse
 from time import sleep
-import os
-import re
-import sys
 import argparse
 from mininet.node import Node
 from mininet.cli import CLI

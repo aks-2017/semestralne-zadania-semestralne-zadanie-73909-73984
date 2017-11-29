@@ -7,10 +7,10 @@
 #### HLS
 ffmpeg -re -i xxx2.mp4 -vcodec libx264 -acodec aac -f flv rtmp://localhost/live
 #### DASH
-ffmpeg -re -i xxx2.mp4 -vcodec libx264 -acodec aac -f flv rtmp://localhost/dash/stream
+ffmpeg -re -i xxx2.mp4 -vcodec libx264 -acodec aac -f flv rtmp://localhost/mpeg
 
 ### 3. Otvor VLC a pripoj sa na adresu
 #### DASH
-  http://IP_adresa_servera/dash/stream.mpd
+  http://IP_adresa_servera/dash/xxx2.mpd
 #### HLS
   http://IP_adresa_servera/hls/xxx2.m3u8
