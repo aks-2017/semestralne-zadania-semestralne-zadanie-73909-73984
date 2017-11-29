@@ -5,3 +5,5 @@ Dokumentácia k projektu sa nachádza v /docs/
 Inštalacná priručka sa nachádza v /deploy-scripts/
 
 Configuračné súbory k mininetu sa nachádzajú v /mininet-scripts/
+
+Skritpy používané na klientskom PC sa nachádzajú v /klient-scripts/

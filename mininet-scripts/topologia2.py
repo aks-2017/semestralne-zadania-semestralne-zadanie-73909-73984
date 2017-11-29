@@ -8,6 +8,9 @@ from mininet.log import setLogLevel, info
 from mininet.topo import Topo
 from functools import partial
 
+#sudo -E python topologia2.py
+#sudo ryu-manager simple_switch.py
+
 def myNetwork():
         link = partial(TCLink, bw=1)
         net = Mininet(topo=None, build=True, link=link)

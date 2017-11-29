@@ -1,3 +1,2 @@
-Skript pre spustenie menenia bandwidthu na klientskom pc, v prípade prvej topológie.
-
-Spustenie suboru: sudo python wonder.py
+### Skript pre spustenie menenia bandwidthu na klientskom pc, v prÃ­pade prvej topolÃ³gie.
+sudo python wonder.py
